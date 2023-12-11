@@ -1,0 +1,16 @@
+:root {
+  color-scheme: light dark;
+  background-color: #242424;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .gameBoard {
+    @apply bg-gameBackground w-max m-auto p-2 rounded-md mt-3;
+  }
+  .square {
+    @apply h-20 w-20 m-1 flex justify-center items-center bg-squareBackgound text-white text-5xl font-semibold;
+  }
+}
